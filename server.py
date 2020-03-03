@@ -116,6 +116,7 @@ def reset():
     for webhook in api.webhooks.list():
         print(webhook.id)
         api.webhooks.delete(webhook.id)
+        print(api.people.me())
     return 'ok'
 
 if __name__ == '__main__':
