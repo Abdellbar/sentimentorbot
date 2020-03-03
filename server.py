@@ -32,7 +32,7 @@ app.logger.setLevel(logging.INFO)
 
 
 @app.route('/webhook',methods=['POST'])
-def parsing():
+def webhook():
     app.logger.info('New reqest ---------------------------------')
 
     data = request.json
@@ -111,6 +111,14 @@ def signin():
     response = sparkbot.add_member_to_sapce(usermail,sharedroomid)
     return response.text.encode('utf8')
 
+@app.route('/reset')
+def reset():
+
+
+    for webhook in api.webhooks.list():
+        print(webhook)
+    #response = sparkbot.add_member_to_sapce(usermail,sharedroomid)
+    return 'ok'
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8080)
