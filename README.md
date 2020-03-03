@@ -16,6 +16,9 @@ For each laptope a bot has been created on the hosting servie heroku find the on
 * laptop1 : ```https://visionbotai1.herokuapp.com/signin?email=your@email.com```
 * laptop2 : ```https://visionbotai2.herokuapp.com/signin?email=your@email.com```
 * ...
+![Wiring photo][email]
+
+[email]:./email.png "sigin to the space"
 
 Check if you got access to webexteams space 'DeveNet Sentimentor Bot Lab - Cisco connect Riyadh 2020' you should see somthing lik this when you open the webexteams app.
 
