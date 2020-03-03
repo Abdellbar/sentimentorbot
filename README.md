@@ -11,15 +11,15 @@ In this lab, we will put togather a webexteams bot that can analyse your selfies
 ## Step 1 :
 
 #### Webexteams Account :
-If you dont have a webexteams account, you can create one for free here LINK, once you have your webexteams account loging on the laptop or on your mobile to webexteams 
+If you dont have a webexteams account, you can create one for free here LINK, once you have your webexteams account loging on the laptop or on your mobile to webexteams app.
 
 #### Access the shared teams space:
-For each laptope a bot has been created on the hosting servie heroku find the one for your laptop:
-laptop1 : https://visionbot1.herokuapp.com/signin
-laptop2 : https://visionbot2.herokuapp.com/signin
+For each laptope a bot has been created on the hosting servie heroku find the one for your laptop and assigne your email address used to create webexteams account:
+laptop1 : https://visionbot1.herokuapp.com/signin?email=your@email.com
+laptop2 : https://visionbot2.herokuapp.com/signin?email=your@email.com
 ...
 
-Check if you got access to webexteams space you should see somthing lik this web you open the webexteams app.
+Check if you got access to webexteams space 'DeveNet Sentimentor Bot Lab - Cisco connect Riyadh 2020' you should see somthing lik this when you open the webexteams app.
 PICTURE 
 
 

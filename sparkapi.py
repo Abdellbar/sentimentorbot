@@ -43,4 +43,14 @@ class Sparkapi:
     )
     print(response.text)
 
+  def add_member_to_sapce(self,email,roomid):
+    response = requests.request("POST","https://api.ciscospark.com/v1/memberships",
+      headers={
+        "Authorization": self.key,
+        "Content-Type":"application/json"
+      },
+      data=json.dumps({"roomId":roomid,"personEmail":email})
+    )
+    return response
+
     

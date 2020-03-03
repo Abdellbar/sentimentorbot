@@ -22,6 +22,7 @@ import sys
 
 app = Flask(__name__)
 sparkbot = Sparkapi(os.environ['Webexteams_token'])
+sharedroomid = Sparkapi(os.environ['shared_room_id'])
 
 gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
@@ -103,6 +104,7 @@ def parsing():
 @app.route('/signin')
 def signin():
     usermail = request.args.get('email')
+    r= sparkbot.add_member_to_sapce(usermail,sharedroomid)
     return usermail
 
 
