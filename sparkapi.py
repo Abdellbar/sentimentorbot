@@ -64,7 +64,7 @@ class Sparkapi:
 
     response = requests.request("POST", url, headers=headers, data = json.dumps(payload))
 
-    #print(response.text.encode('utf8'))    
+    print(response.text.encode('utf8'))    
     return response
 
     
