@@ -104,7 +104,8 @@ def parsing():
 @app.route('/signin')
 def signin():
     usermail = request.args.get('email')
-    r= sparkbot.add_member_to_sapce(usermail,sharedroomid)
+    print(usermail)
+    r = sparkbot.add_member_to_sapce(usermail,sharedroomid)
     return usermail
 
 
