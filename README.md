@@ -38,14 +38,14 @@ before starting the lab, you need to reset your heorku app, you can do that by a
 ## Set up the webhook :
 The webhook is a reverse API call, that will tell our bot when a message has been posted in our shared space. 
 to setup the webhook we need to loging to the webexteams developer portal, and create a webhook for our bot in this [Link](https://developer.webex.com/docs/api/v1/webhooks/create-a-webhook)
--  make sure to copy the api token of your bot in the Authorisation field  
+*  make sure to copy the api token of your bot in the Authorisation field  
   * laptop 1 token : ```NGIzMTc2YTMtMGU0Ny00ZjNjLTk5YzUtZjY4YzZlNWVjZDgwODc2NzA5MGYtMzAz_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f```
   * laptop 2 token : ```MzMwYjYwZmEtYjE0MS00N2NkLTgyOTEtODkxMDFlMDVlNDgxMTk3NjYxMmUtNWQx_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f```
--  copy the target url for your assigned for your laptop bot :
+*  copy the target url for your assigned for your laptop bot :
   * laptop 1 : ```https://visionbotai1.herokuapp.com/webhook```
   * laptop 2 : ```https://visionbotai2.herokuapp.com/webhook```
   * ...
-  
+
 ![Wiring photo][webhook]
 
 [webhook]:./webhook.png "set up webhook in portal"
