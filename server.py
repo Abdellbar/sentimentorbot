@@ -105,8 +105,8 @@ def parsing():
 def signin():
     usermail = request.args.get('email')
     print(usermail)
-    r = sparkbot.add_member_to_sapce(usermail,sharedroomid)
-    return usermail
+    response = sparkbot.add_member_to_sapce(usermail,sharedroomid)
+    return response.text.encode('utf8')
 
 
 if __name__ == '__main__':
