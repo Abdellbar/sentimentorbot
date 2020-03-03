@@ -19,7 +19,9 @@ import os
 import vision_core 
 import logging
 import sys
+from webexteamssdk import WebexTeamsAPI
 
+api = WebexTeamsAPI()
 app = Flask(__name__)
 sparkbot = Sparkapi(os.environ['Webexteams_token'])
 sharedroomid = Sparkapi(os.environ['shared_room_id'])
@@ -105,8 +107,8 @@ def parsing():
 def signin():
     usermail = request.args.get('email')
     print(usermail)
-    response = sparkbot.add_member_to_sapce(usermail,sharedroomid)
-    return response.text.encode('utf8')
+    api.memberships.create(sharedroomid, personEmail=usermail)
+    return 'ok'
 
 
 if __name__ == '__main__':
