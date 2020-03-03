@@ -1,5 +1,5 @@
 #!/bin/bash
-#heroku apps:destroy visionbotai1
+heroku apps:destroy visionbotai8
 heroku create visionbotai8 #create a new app 
 git init
 heroku git:remote -a visionbotai8
