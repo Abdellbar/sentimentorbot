@@ -100,6 +100,11 @@ def parsing():
 
     return 'OK'
 
+@app.route('/signin')
+def signin():
+    usermail = request.args.get('email')
+    return usermail
+
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8080)
