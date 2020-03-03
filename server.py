@@ -113,11 +113,9 @@ def signin():
 
 @app.route('/reset')
 def reset():
-
-
     for webhook in api.webhooks.list():
         print(webhook.id)
-    #response = sparkbot.add_member_to_sapce(usermail,sharedroomid)
+        api.webhooks.delete(webhook.id)
     return 'ok'
 
 if __name__ == '__main__':
