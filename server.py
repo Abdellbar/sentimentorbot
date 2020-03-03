@@ -23,7 +23,7 @@ from webexteamssdk import WebexTeamsAPI
 
 api = WebexTeamsAPI()
 app = Flask(__name__)
-sparkbot = Sparkapi(os.environ['Webexteams_token'])
+sparkbot = Sparkapi(os.environ['WEBEX_TEAMS_ACCESS_TOKEN'])
 sharedroomid = os.environ['shared_room_id']
 
 gunicorn_logger = logging.getLogger('gunicorn.error')

@@ -10,7 +10,7 @@ import os
 class Sparkapi:
 
   def __init__( self, key):
-      self.key = key
+      self.key = "Bearer "+key
 
   def get_msg(self,id):
       url = "https://api.ciscospark.com/v1/messages/"+id
