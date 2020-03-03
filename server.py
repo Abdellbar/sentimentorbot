@@ -116,7 +116,7 @@ def reset():
 
 
     for webhook in api.webhooks.list():
-        print(webhook)
+        print(webhook['id'])
     #response = sparkbot.add_member_to_sapce(usermail,sharedroomid)
     return 'ok'
 
